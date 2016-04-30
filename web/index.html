@@ -354,10 +354,10 @@ $('#zone').bind('change paste keyup', function (e) {
 });
 
 if (localStorage.zone) {
-    $('#zone').val(localStorage.zone);
+    $('#zone').typeahead('val', localStorage.zone);
     $('#zone').trigger('paste');
 } else {
-    $('#zone').val(moment.tz.guess());
+    $('#zone').typeahead('val', moment.tz.guess());
     $('#zone').trigger('paste');
 }
 </script>
