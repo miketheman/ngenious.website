@@ -13,12 +13,20 @@ html {
 body {
     margin: 0 20px;
 }
+p {
+    text-align: justify;
+}
 a {
     color: black;
-    background: yellow;
-    padding: 5px;
 }
-header {
+a.coc {
+    color: black;
+    background: pink;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 1px 5px;
+}
+header, header p {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -38,6 +46,12 @@ header .date {
 }
 content table {
     width: 100%;
+    margin-bottom: 25px;
+}
+content table tr a {
+    color: black;
+    background: yellow;
+    padding: 5px;
 }
 content table tr:hover {
     background: yellow;
@@ -60,10 +74,17 @@ content .title {
     margin-bottom: 10px;
     font-size: 1.3em;
 }
+content .hashtag {
+    background: lightblue;
+    padding: 1px 5px;
+}
+content center {
+    font-size: 3em;
+}
 footer {
     text-align: center;
     color: #888;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 footer span {
     display: inline-block;
@@ -83,6 +104,7 @@ footer span {
 </header>
 
 <content>
+    <section>
     <h2>program</h2>
     <table>
     <tr>
@@ -147,6 +169,37 @@ footer span {
         </td>
     </tr>
     </table>
+    </section>
+
+    <center>~</center>
+
+    <section>
+    <h2>location</h2>
+    <p>
+        somewhere on the internet! (google hangouts)
+    </p>
+    </section>
+
+    <center>~</center>
+
+    <section>
+    <h2>code of conduct</h2>
+    <p>
+        while this is a remote event, we expect attendees and speakers to adhere to the <a class="coc" href="http://berlincodeofconduct.org">berlin code of conduct</a>.
+    </p>
+    <p>
+        if you encounter someone violating the code of conduct, please contact either <a class="coc" href="mailto:lisa@travis-ci.org">lisa</a> or <a class="coc" href="mailto:igor@igor.io">igor</a>.
+    </p>
+    </section>
+
+    <center>~</center>
+
+    <section>
+    <h2>#hashtag</h2>
+    <p>
+        the official #hashtag for this event is <span class="hashtag">#ngenious</span>.
+    </p>
+    </section>
 </content>
 
 <footer>
