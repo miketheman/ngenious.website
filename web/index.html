@@ -328,7 +328,7 @@ footer span {
 <script src="moment-timezone-with-data.min.js"></script>
 <script>
 var tokenizer = function (value) {
-    return value.split(/(\w+|\/)/);
+    return value.split(/(\s+|\/|[-_])/);
 };
 var engine = new Bloodhound({
     local: moment.tz.names(),
